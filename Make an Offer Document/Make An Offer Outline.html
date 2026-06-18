@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Make An Offer Outline.md</title>
+<meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+
+<style>
+/* https://github.com/microsoft/vscode/blob/master/extensions/markdown-language-features/media/markdown.css */
+/*---------------------------------------------------------------------------------------------
+ *  Copyright (c) Microsoft Corporation. All rights reserved.
+ *  Licensed under the MIT License. See License.txt in the project root for license information.
+ *--------------------------------------------------------------------------------------------*/
+
+body {
+	font-family: var(--vscode-markdown-font-family, -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif);
+	font-size: var(--vscode-markdown-font-size, 14px);
+	padding: 0 26px;
+	line-height: var(--vscode-markdown-line-height, 22px);
+	word-wrap: break-word;
+}
+
+#code-csp-warning {
+	position: fixed;
+	top: 0;
+	right: 0;
+	color: white;
+	margin: 16px;
+	text-align: center;
+	font-size: 12px;
+	font-family: sans-serif;
+	background-color:#444444;
+	cursor: pointer;
+	padding: 6px;
+	box-shadow: 1px 1px 1px rgba(0,0,0,.25);
+}
+
+#code-csp-warning:hover {
+	text-decoration: none;
+	background-color:#007acc;
+	box-shadow: 2px 2px 2px rgba(0,0,0,.25);
+}
+
+body.scrollBeyondLastLine {
+	margin-bottom: calc(100vh - 22px);
+}
+
+body.showEditorSelection .code-line {
+	position: relative;
+}
+
+body.showEditorSelection .code-active-line:before,
+body.showEditorSelection .code-line:hover:before {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 0;
+	left: -12px;
+	height: 100%;
+}
+
+body.showEditorSelection li.code-active-line:before,
+body.showEditorSelection li.code-line:hover:before {
+	left: -30px;
+}
+
+.vscode-light.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.15);
+}
+
+.vscode-light.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.40);
+}
+
+.vscode-light.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+.vscode-dark.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.4);
+}
+
+.vscode-dark.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.60);
+}
+
+.vscode-dark.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+.vscode-high-contrast.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 160, 0, 0.7);
+}
+
+.vscode-high-contrast.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 160, 0, 1);
+}
+
+.vscode-high-contrast.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+img {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+a:focus,
+input:focus,
+select:focus,
+textarea:focus {
+	outline: 1px solid -webkit-focus-ring-color;
+	outline-offset: -1px;
+}
+
+hr {
+	border: 0;
+	height: 2px;
+	border-bottom: 2px solid;
+}
+
+h1 {
+	padding-bottom: 0.3em;
+	line-height: 1.2;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+}
+
+h1, h2, h3 {
+	font-weight: normal;
+}
+
+table {
+	border-collapse: collapse;
+}
+
+table > thead > tr > th {
+	text-align: left;
+	border-bottom: 1px solid;
+}
+
+table > thead > tr > th,
+table > thead > tr > td,
+table > tbody > tr > th,
+table > tbody > tr > td {
+	padding: 5px 10px;
+}
+
+table > tbody > tr + tr > td {
+	border-top: 1px solid;
+}
+
+blockquote {
+	margin: 0 7px 0 5px;
+	padding: 0 16px 0 10px;
+	border-left-width: 5px;
+	border-left-style: solid;
+}
+
+code {
+	font-family: Menlo, Monaco, Consolas, "Droid Sans Mono", "Courier New", monospace, "Droid Sans Fallback";
+	font-size: 1em;
+	line-height: 1.357em;
+}
+
+body.wordWrap pre {
+	white-space: pre-wrap;
+}
+
+pre:not(.hljs),
+pre.hljs code > div {
+	padding: 16px;
+	border-radius: 3px;
+	overflow: auto;
+}
+
+pre code {
+	color: var(--vscode-editor-foreground);
+	tab-size: 4;
+}
+
+/** Theming */
+
+.vscode-light pre {
+	background-color: rgba(220, 220, 220, 0.4);
+}
+
+.vscode-dark pre {
+	background-color: rgba(10, 10, 10, 0.4);
+}
+
+.vscode-high-contrast pre {
+	background-color: rgb(0, 0, 0);
+}
+
+.vscode-high-contrast h1 {
+	border-color: rgb(0, 0, 0);
+}
+
+.vscode-light table > thead > tr > th {
+	border-color: rgba(0, 0, 0, 0.69);
+}
+
+.vscode-dark table > thead > tr > th {
+	border-color: rgba(255, 255, 255, 0.69);
+}
+
+.vscode-light h1,
+.vscode-light hr,
+.vscode-light table > tbody > tr + tr > td {
+	border-color: rgba(0, 0, 0, 0.18);
+}
+
+.vscode-dark h1,
+.vscode-dark hr,
+.vscode-dark table > tbody > tr + tr > td {
+	border-color: rgba(255, 255, 255, 0.18);
+}
+
+</style>
+
+<style>
+/* Tomorrow Theme */
+/* http://jmblog.github.com/color-themes-for-google-code-highlightjs */
+/* Original theme - https://github.com/chriskempson/tomorrow-theme */
+
+/* Tomorrow Comment */
+.hljs-comment,
+.hljs-quote {
+	color: #8e908c;
+}
+
+/* Tomorrow Red */
+.hljs-variable,
+.hljs-template-variable,
+.hljs-tag,
+.hljs-name,
+.hljs-selector-id,
+.hljs-selector-class,
+.hljs-regexp,
+.hljs-deletion {
+	color: #c82829;
+}
+
+/* Tomorrow Orange */
+.hljs-number,
+.hljs-built_in,
+.hljs-builtin-name,
+.hljs-literal,
+.hljs-type,
+.hljs-params,
+.hljs-meta,
+.hljs-link {
+	color: #f5871f;
+}
+
+/* Tomorrow Yellow */
+.hljs-attribute {
+	color: #eab700;
+}
+
+/* Tomorrow Green */
+.hljs-string,
+.hljs-symbol,
+.hljs-bullet,
+.hljs-addition {
+	color: #718c00;
+}
+
+/* Tomorrow Blue */
+.hljs-title,
+.hljs-section {
+	color: #4271ae;
+}
+
+/* Tomorrow Purple */
+.hljs-keyword,
+.hljs-selector-tag {
+	color: #8959a8;
+}
+
+.hljs {
+	display: block;
+	overflow-x: auto;
+	color: #4d4d4c;
+	padding: 0.5em;
+}
+
+.hljs-emphasis {
+	font-style: italic;
+}
+
+.hljs-strong {
+	font-weight: bold;
+}
+</style>
+
+<style>
+/*
+ * Markdown PDF CSS
+ */
+
+ body {
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif, "Meiryo";
+	padding: 0 12px;
+}
+
+pre {
+	background-color: #f8f8f8;
+	border: 1px solid #cccccc;
+	border-radius: 3px;
+	overflow-x: auto;
+	white-space: pre-wrap;
+	overflow-wrap: break-word;
+}
+
+pre:not(.hljs) {
+	padding: 23px;
+	line-height: 19px;
+}
+
+blockquote {
+	background: rgba(127, 127, 127, 0.1);
+	border-color: rgba(0, 122, 204, 0.5);
+}
+
+.emoji {
+	height: 1.4em;
+}
+
+code {
+	font-size: 14px;
+	line-height: 19px;
+}
+
+/* for inline code */
+:not(pre):not(.hljs) > code {
+	color: #C9AE75; /* Change the old color so it seems less like an error */
+	font-size: inherit;
+}
+
+/* Page Break : use <div class="page"/> or <div class="page"></div> to insert page break
+-------------------------------------------------------- */
+.page {
+	page-break-after: always;
+}
+
+</style>
+
+<script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
+</head>
+<body>
+  <script>
+    mermaid.initialize({
+      startOnLoad: true,
+      theme: document.body.classList.contains('vscode-dark') || document.body.classList.contains('vscode-high-contrast')
+          ? 'dark'
+          : 'default'
+    });
+  </script>
+<h1 id="make-an-offer--customer-conversion-pushes-outline">Make An Offer / Customer Conversion Pushes Outline</h1>
+<h2 id="summary-of-needs">Summary of Needs</h2>
+<ul>
+<li>Currently NXC sites have targeted ads through Google; Should be looking into more targeted pushes to customers through an Email service that prompts engagement (Need to strike a balance between pushy and indifferent)</li>
+<li>We want to have customers engaged with the system in the process of purchasing their stone, while also limiting the need for salespeople to engage in discount discussions.
+<ul>
+<li>Want to increase the number of customers who actively sign up for accounts with Market Org. so that we can email offers and facilitate negotiations directly through the website</li>
+<li>Hope is that this will increase conversion and also lock-in</li>
+</ul>
+</li>
+<li>For the Vendor side we want to be able to give them more exposure to the end customer and influence thier ability to sell directly. Also we want to make sure that the features are optional and that Vendors that are interested can use it easily while Vendors while not pressuring others who may be more skeptical</li>
+<li><em>Intentions overall:</em> Increased engagement, Increased Customer Conversion, Incresed Customer Lock-In and reduced returns, Inventory Churn, Decreased Useless Back-and-Forth, Larger tool set for facilitating discounts.</li>
+</ul>
+<hr>
+<h2 id="customer-side-considerations">Customer Side Considerations</h2>
+<ul>
+<li><strong>Utilizing Data to Create Pushes with MAO:</strong> Ensure that we are monitoring Customer activity well and that we can keep track of different levels of interest and who may be amenable to additional pursuit. Example; Customer who looks at an item a few times or holds an item in their cart for a period and is moving slow on placing an order.</li>
+<li><strong>Incentivising Sign Up:</strong> Be sure we push a bunch of features that make it desirable for more prospective customers to sign up directly to be served items.</li>
+<li><strong>Create Consumer Profile:</strong> Curious about how we develop a profile for a customer and how we can look into tooling that Customers with accounts can use.
+<ul>
+<li>Maybe create a center for customers to engage and select their interests so that we can send them personalized emails and offers.
+<ul>
+<li>With that in mind we can send them email reminders to mention that they should develop a profile for us to serve them items from the inventory and ideas from our MTOs as well as items that are candidates for Make-an-Offer.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="customer-concerns">Customer Concerns</h3>
+<ul>
+<li><strong>Balancing Pushy and Apathetic:</strong> If we send out too many emails to customers we run the risk of them considering us spammy and we can gain a negative reputation. Conversely, we could lose out on potential conversions if our logic doesn't have the capacity to capitalize.</li>
+<li><strong>Ensuring Proper Targeting:</strong> If we are not pushing the correct items to customers and balancing the interest we are not going to see the conversions we need from our efforts. Ensure that we have the algorithm tuned to deliver items that will pique interest in customers.</li>
+<li><strong>Exploiting Negotiations:</strong> Nefarious actors could try to exploit the system and lead to frustration. We need to make sure that the system is able to identify issues quickly and flag them.</li>
+<li><strong>Potential Lackluster Interest:</strong> Need to make the pushes accesible and engaging, whether it be email headlines or email wording to make the offer appealing and make sure the isn't lackluster interest in pulling prosepective customers into negotiation.</li>
+<li><strong>Lead Cooling:</strong> Leads can get started and we could have lapses where negotiation stops on Customer side so we have to be monitoring and ensuring auto follow-up in those lapses</li>
+</ul>
+<hr>
+<h2 id="nxc-considerations">NXC Considerations</h2>
+<ul>
+<li><strong>Push Center:</strong> In MSX there should be a dashboard that allows us to tweak the logic of the pushes.
+<ul>
+<li>Editable Parameters for pushes should be as follows:
+<ul>
+<li>Age: Should be able to select multiple aging ranges and set rules per age ranging (Max Discount set per Age range)</li>
+<li>Salability: Should be able to edit max discount according to how likely something is to sell and what factors go into it:
+<ul>
+<li>Rarity</li>
+<li>Desirability</li>
+</ul>
+</li>
+<li>Time Before Push: Can adjust how aggressively we are pushing items that are in carts and have MAOs.</li>
+<li>Similar Item: Based on certain item types we can have Pushes that push similar Make an Offer listings to customers based on items in their carts/favorites etc.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><strong>Specific Pushes:</strong> Make it possible to have MAOs pushed to customers based on items they were looking at. Create connections directly rather than relying on churn. Final Sale terms</li>
+<li><strong>Customer Account Insights:</strong> Build out a set of tools that allows us not just to see the activity on individual pieces but also the amount of time on average people are spending on our site, creating profiles for customer based on the insights of their activity.</li>
+<li><strong>Conversion Analytics:</strong> Keep track of how many conversions we get from links that we provide for MAO items and have a center that allows us to view and judge the efficacy of strategy</li>
+<li><strong>Salesperson Relief:</strong> Based on the ability for us to automate pushes we can even add a tool for a salesperson to push a negotiation email a prospective customer</li>
+<li><strong>Agentic Integrations:</strong> Using AI Agents to scrub our Inventory listings for not just enabled MAOs but also for items that represent good matches with items that customers have in their carts/favorites that are MAOs.</li>
+<li><strong>Creating Jewelry with MAO Stones:</strong> We have to think about how to treat stones that have been negotiated with MAO and how that jewelry works. What is the return policy for items that have stones that were purchased with Final Sale on MAOs, are we willing to accept returns on jewelry made with those items?</li>
+</ul>
+<h3 id="nxc-concerns">NXC Concerns</h3>
+<ul>
+<li><strong>Finding Target Recipe:</strong> Requires tweaking and analysis to see how the features and strategy are effecting conversion rates. We also need to define metrics of success and see about attaining them by tuning the strategy of items we're pushing.</li>
+<li><strong>Ensuring Less Salesperson Work:</strong> Need to be sure that the system is robust enough to not pour over heavily into the realm of customer service needs. As it is our salespeople are fully loaded with responsibilities and we do not want to add more to their load.</li>
+<li><strong>Managing Large Amounts of Data:</strong> There is going to be alot of data that goes into tool implementation as well as profile generation for customers who may be amenable to pushes.</li>
+<li><strong>Identifying Crucial Variables:</strong> Need to be sure we understand what it is that leads to conversions through this method. Additionally conversations need to be had with salespeople to understand how we are currently converting larger sales to ensure that we are keeping those methods open and not cutting ourselves off from those with MAO conversions.</li>
+<li><strong>Processing Difficulties:</strong> Need to be sure there are no headaches with processing payments or issues with fulfillment as well as keeping good track of terms and policies with regards to items that are purchased through negotiations</li>
+</ul>
+<hr>
+<h2 id="vendor-considerations">Vendor Considerations</h2>
+<ul>
+<li><strong>Functionality in Notification Center:</strong> Recommendations to put stones up for Make an Offer based on their age. Make it easy to turn off but also make it give insights to the Vendor based on the analytics of the items.</li>
+<li><strong>Promotion Center:</strong> Framed in the light of setting items up to be easier to sell on the B2C platform. It will allow a given vendor to set discounts on items based on factors similar to how our &quot;Push&quot; Center will work in MSX. Additionally will signal MSX directly and will populate discount amounts on items for our &quot;Push&quot; Center.</li>
+<li><strong>Recommended Discount:</strong> We can create logic that feeds vendors recommendations for discounts given specific data about both their items as well as other offerings on the market.</li>
+<li><strong>Tie-ins with Analytics Features:</strong> Analytics are on the docket for features that are going to be in development. When those features are implemented and they are available for all Vendors on 47th/Instagem.</li>
+<li><strong>Ease of Action:</strong> Make it easy for the Vendors to access and create rules based on their inventory and ideas we can give to them based on our inventory analytics.</li>
+</ul>
+<p><em><strong>Idea: Add a &quot;Time in Inventory&quot; field seperate from &quot;Aging&quot; that can give insights about items that may not have been up on 47th St for a long time but may have been sitting in their inventory for a while</strong></em></p>
+<h3 id="vendor-concerns">Vendor Concerns</h3>
+<ul>
+<li><strong>Indifference in Features:</strong> Vendors are likely to ignore the features if they aren't prompted to engage. It's absolutely crucial to make sure that messaging, support and testing are on-point.</li>
+<li><strong>Educating Vendors:</strong> Vendors may not understand initially and make mistakes when it comes to using the functionality we build into 47th Street and thereby get angry. We need to issue a large release about the features and ensure that they understand the utility. Daniel to be available given questions and strategy discussions.</li>
+<li><strong>Bitterness about Pricing:</strong> There is a risk that some Vendors might see this as an attempt to muscle them into altering their pricing. Need to be clear that this is an attempt to increase utility of the platform to them and increase churn in their inventory. Additionally it gives them more direct exposure to the retail customer.</li>
+<li><strong>Logistics of Notification:</strong> Need to make sure contact information is up to date and that Notifications are getting to Vendors so they are not blindsided by information about their stones. This ties into the Notification Center but is absolutely critical when it comes to making sure the Vendors feel that we are being transparent about our operations.</li>
+</ul>
+
+</body>
+</html>
