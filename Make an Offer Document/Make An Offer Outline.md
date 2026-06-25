@@ -11,7 +11,7 @@ ___
 
 ## Customer Side Considerations
 
-- **Utilizing Data to Create Pushes with MAO:** Ensure that we are monitoring Customer activity well and that we can keep track of different levels of interest and who may be amenable to additional pursuit. Example; Customer who looks at an item a few times or holds an item in their cart for a period and is moving slow on placing an order.
+- **Utilizing Data to Create Pushes with MAO:** Ensure that we are monitoring Customer activity well and that we can keep track of different levels of int erest and who may be amenable to additional pursuit. Example; Customer who looks at an item a few times or holds an item in their cart for a period and is moving slow on placing an order.
 - **Incentivising Sign Up:** Be sure we push a bunch of features that make it desirable for more prospective customers to sign up directly to be served items.
 - **Create Consumer Profile:** Curious about how we develop a profile for a customer and how we can look into tooling that Customers with accounts can use.
   - Maybe create a center for customers to engage and select their interests so that we can send them personalized emails and offers.
