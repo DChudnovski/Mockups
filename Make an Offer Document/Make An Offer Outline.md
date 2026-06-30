@@ -36,7 +36,29 @@ ___
       - Desirability
     - Time Before Push: Can adjust how aggressively we are pushing items that are in carts and have MAOs.
     - Similar Item: Based on certain item types we can have Pushes that push similar Make an Offer listings to customers based on items in their carts/favorites etc.
-- **Specific Pushes:** Make it possible to have MAOs pushed to customers based on items they were looking at. Create connections directly rather than relying on churn. Final Sale terms
+
+- **MAO Advanced Search:** Addition to Advanced Search in MSX that allows us to filter by items that have Make-An-Offer enabled.
+
+- **Offer Records:** Under *Tools>Logs* we can access the list of all offers that have come through on MAO items.
+    - Should be able to filter by the following: 
+      - Vendor
+      - Item Type
+      - Stone Type
+      - Percent
+      - Successful?
+    - Question: Do we want to have the full Advanced Search functionality to the MAO Search
+  
+- **Promo Search:** Each Promo that a Vendor creates should be browsable through MSX:
+    - Parameters:
+      - Vendor
+      - Item Type
+      - Active?
+      - Timeframe
+    - Fields:
+      - ID
+      - Vendor
+      - Items on Promo
+
 - **Customer Account Insights:** Build out a set of tools that allows us not just to see the activity on individual pieces but also the amount of time on average people are spending on our site, creating profiles for customer based on the insights of their activity.
 - **Conversion Analytics:** Keep track of how many conversions we get from links that we provide for MAO items and have a center that allows us to view and judge the efficacy of strategy
 - **Salesperson Relief:** Based on the ability for us to automate pushes we can even add a tool for a salesperson to push a negotiation email a prospective customer
