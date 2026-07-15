@@ -30,5 +30,3 @@ Made up of 2 Sides; **Filter** and **Effect**:
 ## Promo Object Model Draft
 
 ![alt text](<Promotion Model.png>)
-
-
