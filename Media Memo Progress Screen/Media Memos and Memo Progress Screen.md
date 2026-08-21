@@ -71,8 +71,3 @@ The detail page should give all the information on the Media memo and can also a
 Items should have a list of the Media memos they were a part of; this allows for not just good monitoring of the items status and memo status but also allows us to walk back directly through the memo and pricing history of items.
 
 ![alt text](image.png)
-
-## Media Services Dashboard
-
-Idea for a Dashboard with views showing a few different insights on the status of individual memos and overall Media Services per NXC office. 
-
