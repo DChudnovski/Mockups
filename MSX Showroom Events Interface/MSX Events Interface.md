@@ -2,7 +2,22 @@
 
 With the completion of the U.S. showroom we have the capacity to host events to boost our profile and develop our business Interests, Want to develop an interface in MSX that will allow us to manage Invites and RSVPs to events.
 
+## Invitee Database (Event Invitees)
 
+
+
+This is where we keep track of the contact info for all potential invitees as well as add new invitees. There should be auto-population from various places (Vendors, Customers w/ Accounts, Office Employees) and have the ability to add other potential Invitees.
+
+```
+Invitee Object Structure:
+
+Name
+Company (Not Mandatory)
+Email
+Phone
+Type
+Address
+```
 
 ## Events Calendar
 
@@ -14,6 +29,7 @@ As shown in the below mockup; the Calendar View is a meanso of viewing, Month by
 ![alt text](<MSX Events Interface Calendar View.jpg>)
 
 ## Create New Event
+![alt text](<Create Showroom Event.jpg>)
 
 ```
 Event Object Structure:
@@ -27,6 +43,7 @@ RSVP by Date
 [Invitees]
 RSVPs
 Description
+Location *This refers to the section/s of the US Office where the event will be held*
 {Invitation} *Should be editable from the Event Description screen and should allow for an upload of a JPG or HTML file that will correspond to an email that will be sent out*
 ```
 From here a new Event will have its properties set, and we can define who the invitees are. (Note: The type will determine who is prioritized on the invite list and who gets auto-added)
@@ -41,20 +58,9 @@ There should be checkboxes on the Invitee list that allow for bulk actions on ex
 
 ## Add Invitees
 
+
+
 There should be an interface that allows you to add invitees to the invite list on an event. We should maintain a database with different types of invitees. These should feed from the various sources currently existing in MSX (whether that be the Vendor List, the Customer List, or the List of Employees)
 
-## Invitee Database
 
-This is where we keep track of the contact info for all potential invitees as well as add new invitees. There should be auto-population from various places (Vendors, Customers w/ Accounts, Office Employees) and have the ability to add other potential Invitees.
-
-```
-Invitee Object Structure:
-
-Name
-Company (Not Mandatory)
-Email
-Phone
-Type
-Address
-```
 
