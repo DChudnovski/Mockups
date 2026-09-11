@@ -77,3 +77,4 @@ There should be checkboxes on the Invitee list that allow for bulk actions on ex
 There should be an interface that allows you to add invitees to the invite list on an event. We should maintain a database with different types of invitees. These should feed from the various sources currently existing in MSX (whether that be the Vendor List, the Customer List, or the List of Employees).
 
 Not sure if we should have a means of adding a new invitee directly to the Invitee DB from this section.
+
